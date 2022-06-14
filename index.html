@@ -3,53 +3,127 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=h1, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>Text title</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Rubik:wght@400;700&display=swap"
+		rel="stylesheet">
+	<title>CV</title>
 </head>
 
 <body>
-	<h1>Leonid Kovganko</h1>
-	<p>-Web developer</p>
-	<img src="IMG3.jpg" alt="foto" width="170" height="216">
-	<h1>Contacts</h1>
-	<ul>
-		<li>Location:Minsk, Belarus</li>
-		<li>Phone:+375 29 322-92-31</li>
-		<li>Email:kovganko.leonid@gmail.com</li>
-		<li>Skype:Leonid Kovganko</li>
-		<li><a href="https://github.com/LeonidKovganko"> GitHub</a></li>
-	</ul>
-	<h1>Summary</h1>
-	<p>I’m studying at the IT-academy on the course of web development HTML, CSS, JavaScript. I’m constantly working
-		on<br>
-		my professional level, expanding my expertise and knowledge. I’m passionate and excited about changing my
-		career<br>
-		as I see a lot of growth opportunities in forthcoming tasks, projects and prospects. Ready to develop my
-		skills<br>
-		in various types of programming.</p>
-	<h1>Skills</h1>
-	<ul>
-		<li>Languages: English – Upper-Intermediate<br>
-			Russian – Native</li>
-		<li>Professional skills: Website development using html, css and javascript </li>
-		<li>Technology skills: HTML, CSS, SASS, JavaScript</li>
-		<li>Tools: VSCode, WebStorm, Git</li>
-		<li>Personal skills: Critical thinker, Detail-oriented, Empathic, Respectful, Good communicator, Getting things
-			done</li>
-	</ul>
-	<h1>Education</h1>
-	<ul>
-		<li>Educational Center for Programming and High Tech “IT-Academy</li>
-		-Web development using HTML, CSS, JavaScript
-	</ul>
-	<ul>
-		<li>Belarusian National Technical University</li>
-		-Faculty of Civil Engineering
-		-Magistracy (Civil Engineer)
-		-Graduate school (Civil Engineer)
-	</ul>
+	<div class="wrapper">
+		<header id="open" class="site-header">
+			<div id="close" class="header__container">
+				<ul class="header-bar">
+					<li class="menu_item"><a href="#contacts" class="header-bar-button">Contacts</a></li>
+					<li class="menu_item"><a href="#summary" class="header-bar-button">Summary</a> </li>
+					<li class="menu_item"><a href="#skills" class="header-bar-button">Skills</a> </li>
+					<li class="menu_item"><a href="#code" class="header-bar-button">Code</a> </li>
+					<li class="menu_item"><a href="#projects" class="header-bar-button">Projects</a> </li>
+					<li class="menu_item"><a href="#education" class="header-bar-button">Education</a> </li>
+					<li class="menu_item"><a href="#languages" class="header-bar-button">Languages</a> </li>
+				</ul>
+				<div class="header_burger">
+					<a href="#open" class="icon-menu"><span></span></a>
+					<a href="#close" class="close-icon-menu"></a>
+				</div>
+			</div>
+		</header>
+		<main class="site-main">
+			<div class="main-block1">
+				<img src="/CV/assets/img/IMG_3555.JPG" alt="foto" class="site-foto" height="216" width="170">
+			</div>
+			<div class="main-block2">
+				<h2> Leonid Kovganko</h2>
+				<h3> Junior front-end developer</h3>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="contacts">CONTACTS</p>
+				<ul>
+					<li>Minsk,Belarus</li>
+					<li>Email: <a href="kovganko.leonid@gmail.com" class="contacts-link">kovganko.leonid@gmail.com</a>
+					</li>
+					<li>Github: <a href="https://github.com/LeonidKovganko" class="contacts-link">LeonidKovganko</a>
+					</li>
+					<li>Telegram: <a href="https://t.me/kovganko_leonid" class="contacts-link">@kovganko_leonid</a></li>
+					<li>Discord: <a href="https://discord.gg/bDGHsBj8" class="contacts-link">Leonid#6008</a> </li>
+				</ul>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="summary">SUMMARY</p>
+				<p>I’m studying at the IT-academy on the course of web development HTML, CSS, JavaScript. I’m constantly
+					working
+					on
+					my professional level, expanding my expertise and knowledge. I’m passionate and excited about
+					changing my
+					career
+					as I see a lot of growth opportunities in forthcoming tasks, projects and prospects. Ready to
+					develop my
+					skills
+					in various types of programming.</p>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="skills">SKILLS</p>
+				<ul>
+					<li>Professional skills: Web-development using HTML5, CSS, JavaScript</li>
+					<li>Technology skills: HTML5, CSS, SASS, JavaScript, Git, Github</li>
+					<li>Tools:VSCode, WebStorm</li>
+					<li>Personal skills: Critical thinker, Detail-oriented, Empathic, Respectful, Good communicator,
+						Getting things
+						done</li>
+				</ul>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="code">CODE</p>
+				<p><code>
+					function factorial(n) {<br>if(n&lt;0) return null; <br>if (n&lt;= 1) return 1; <br>return n * factorial(n-1); <br>}</code>
+				</p>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="courses">COURSES</p>
+				<ul>
+					<li>Hexlet - JavaScript for beginner</li>
+					<li>Udemy - React + Redux - Professional Development</li>
+					<li>IT-Academy - Web Development By Doing: HTML / CSS / JavaScript</li>
+				</ul>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="projects">PROJECTS</p>
+				<ul>
+					<li>Hexal</li>
+					<li>Presentation</li>
+					<li>GuitarHero</li>
+					<li>NewYorkCoffee</li>
+				</ul>
+			</div>
+			<div class="main-block" id="education">
+				<p class="main-block-title">EDUCATION</p>
+				<p>Belarusian National Technical University</p>
+				<ul>
+					<li>-Faculty of Civil Engineering</li>
+					<li>-Magistracy (Civil Engineer)</li>
+					<li>-Graduate school (Civil Engineer)</li>
+				</ul>
+			</div>
+			<div class="main-block">
+				<p class="main-block-title" id="languages">LANGUAGES</p>
+
+				<ul>
+					<li>Russian – Native</li>
+					<li>English – Upper-Intermediate</li>
+				</ul>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="github-link"><a href="https://github.com/LeonidKovganko" class="footer-link">&copy; 2022
+					LeonidKovganko</a></div>
+			<div class="rschool-link"><a href="https://rs.school/js/">
+					<img src="/CV/assets/svg/rs_school_js.svg" alt="rs_school" height="60">
+				</a></div>
+		</footer>
+	</div>
 </body>
 
 </html>
